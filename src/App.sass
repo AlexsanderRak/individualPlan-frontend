@@ -1,0 +1,32 @@
+@import './AllColors'
+
+.app
+    width: 100%
+    display: flex
+
+    
+
+    &-menu
+        width: max-content
+        transition: all .3s
+        background: $light-blue
+    &-content
+        transition: all .3s
+        flex-basis: 90%
+        flex-grow: 1
+        // max-width: 94.4vw
+
+
+html
+    /* width */
+    &::-webkit-scrollbar 
+        width: 10px
+    /* Track */
+    &::-webkit-scrollbar-track 
+        background: $white
+    /* Handle */
+    &::-webkit-scrollbar-thumb 
+        background: #ccc
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover
+        background: $gray

@@ -1,0 +1,81 @@
+@import '../../AllColors' 
+
+.messages
+    width: 100%
+    padding: 10px 0
+    display: flex
+    align-items: center
+
+    &-local
+        justify-content: flex-end
+
+    &-income
+        justify-content: flex-start
+
+    &-content
+        position: relative
+        display: flex
+        flex-direction: column 
+        justify-content: space-between
+        font-size: 14px
+        font-weight: 400
+        font-family: $font-main 
+        letter-spacing: .5px
+        color: $white
+        padding: 10px
+        padding-bottom: 2px
+        border-radius: 10px
+        min-width: 15vw
+        min-height: 80px
+
+        &-footer
+            display: flex
+            justify-content: flex-end
+            span
+                font-size: 10px
+
+
+
+
+.messages-local
+    position: relative
+
+    i
+        display: none
+        transition: $transition
+        cursor: pointer
+        color: $white
+        font-size: 12px
+        font-weight: 400
+        font-style: normal
+        position: absolute
+        top: 5px
+        right: -5px
+        background: $btn-color
+        padding: 2px 7px
+        border-radius: 50px
+
+    &:hover
+        i
+            display: block
+
+    .messages-content
+        background: $teal
+        max-width: 50%
+        overflow: hidden
+        text-overflow: ellipsis
+        word-break: break-all
+        
+
+.messages-income
+    
+    i
+        display: none
+
+    .messages-content
+        background: $light-blue
+        max-width: 50%
+        overflow: hidden
+        text-overflow: ellipsis
+        word-break: break-all
+    

@@ -1,0 +1,46 @@
+@import '../../AllColors' 
+
+.auth_personal
+    background: $white
+    height: 100vh
+
+    &-content
+        display: flex
+        justify-content: center
+        align-items: center
+        background: $white
+        height: 80vh
+
+        &-form
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            padding: 10px
+            // background: linear-gradient(135deg, rgba($white, .5), rgba($white, 0))
+            background: $light-blue
+            height: max-content
+            max-height: 55%
+            width: 20%
+            border-radius: 5px
+            box-shadow: 2px 2px 0px 0px rgba($white, .1), 2px 2px 0px 0px rgba($white, .1)
+
+            &-header
+                color: $white
+                font-weight: 600
+                padding-bottom: 20px
+            
+            &-block
+                width: 80%
+
+            &-footer
+                display: flex
+                width: 80%
+                color: $white
+                cursor: pointer
+                transition: $transition
+                font-family: $font-main
+                font-size: 12px
+                font-weight: 600
+                &:hover
+                    color: $gold

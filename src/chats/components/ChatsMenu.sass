@@ -1,0 +1,84 @@
+@import '../../AllColors' 
+@import '../../Mixins'
+
+.chatsMenu
+    position: relative
+    height: 100vh
+    overflow: hidden
+    // border-right: 2px solid $white
+    background: $light-blue
+    transition: $transition
+    box-shadow: 2px 2px 0px 0px rgba($white, .1), 2px 2px 0px 0px rgba($white, .1)
+
+
+    &-content
+        // border-left: 1px solid $white
+        height: 100%
+        padding: 15px 20px
+
+        &-search
+           display: flex
+           align-items: center
+           padding: 10px 20px
+        
+        &-chats
+            font-family: $font-main
+            font-weight: 400
+            height: 100%
+            overflow: auto
+
+            @include scrollBar
+
+            &-item
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 40px
+                padding: 0 5px
+                margin-bottom: 10px
+                border-radius: 5px
+                cursor: pointer
+                background: $white
+
+                &:hover
+                    background: $light-gray
+                
+                &-active
+                    background: $light-gray
+                &-main
+                    display: flex
+                    align-items: center
+                    &-avatar 
+                        display: block
+                        width: 26px
+                        height: 26px
+                        margin: 0 10px
+                        border-radius: 50px
+                        background: #A5D2D4
+
+                    &-text
+                        display: flex
+                        flex-direction: column
+                        &-name
+                            color: rgba(0, 0, 0, 0.8);
+                            font-size: 14px
+                            white-space: nowrap
+                        &-role
+                            color: #A6A4A4
+                            font-size: 12px
+                
+                &-messages
+                    background: $btn-color
+                    border-radius: 5px
+                    width: max-content
+                    padding: 1px 5px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                    span
+                        color: $white
+                        font-size: 14px
+                        font-weight: 400
+                        letter-spacing: 1px
+
